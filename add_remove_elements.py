@@ -31,4 +31,5 @@ def add_delete_button(url):
     print("Test succeed")
 
 
-add_delete_button(url)
+if __name__ == '__main__':
+    add_delete_button(url)
