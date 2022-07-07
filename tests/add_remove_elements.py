@@ -5,12 +5,9 @@ import time
 url = "https://the-internet.herokuapp.com/"
 
 
-def add_delete_button(url):
+def test_add_delete_button(url):
     driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
     driver.implicitly_wait(6)
-
-    driver.get(url)
-
     # search for link with Add/Remove Elements
     driver.find_element_by_xpath('//div[@id="content"]/ul/li[2]/a').click()
     time.sleep(3)
@@ -32,4 +29,4 @@ def add_delete_button(url):
 
 
 if __name__ == '__main__':
-    add_delete_button(url)
+    test_add_delete_button(url)

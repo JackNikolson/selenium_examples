@@ -9,7 +9,7 @@ import requests
 url = 'https://the-internet.herokuapp.com/'
 
 
-def check_for_broken_image():
+def test_check_for_broken_image():
     driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
     driver.implicitly_wait(6)
 
@@ -36,4 +36,4 @@ def check_for_broken_image():
         print('test over')
 
 
-check_for_broken_image()
+test_check_for_broken_image()
